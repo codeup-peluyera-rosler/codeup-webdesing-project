@@ -2,10 +2,36 @@
 
 :root {
     --crl-red: #e6563b;
-    --crl-yellow: #eb9d3a;
+    --crl-orange: #eb9d3a;
     --crl-green: #7cb06c;
     --crl-blue: #00aba9;
     --crl-white: #f0f0f0;
     --crl-gray: #e6e6e6;
+
+    --sec-font: 'Abel', sans-serif;
+    --pri-font: 'Anton', sans-serif;
 }
+
+body {
+    font-family:var(--pri-font);
+}
+
+nav {
+    font-family: var(--sec-font);
+}
+.page-wrapper {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--crl-gray);
+}
+
+.header-circle {
+    min-height: 100px;
+    min-width: 100px;
+}
+
+
+
+
 
