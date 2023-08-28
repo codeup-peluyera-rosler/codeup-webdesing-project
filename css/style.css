@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+
+:root {
+    --crl-red: #e6563b;
+    --crl-yellow: #eb9d3a;
+    --crl-green: #7cb06c;
+    --crl-blue: #00aba9;
+    --crl-white: #f0f0f0;
+    --crl-gray: #e6e6e6;
+}
