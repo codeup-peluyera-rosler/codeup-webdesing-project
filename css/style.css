@@ -30,7 +30,10 @@ nav {
     min-height: 100px;
     min-width: 100px;
 }
+.icon-circle {
+     min-width: 20px;
 
+ }
 
 
 
