@@ -13,6 +13,9 @@
 <body>
 <div class="page-wrapper text-uppercase">
 
+    <!--Obtained hamburger menu template from Bootstrap Docs -->
+    <!-- Navbar for mobile display, hidden in large and above screen sizes.-->
+
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
             <ul class="d-flex flex-column list-unstyled gap-2 align-items-center justify-content-center mb-0">
@@ -24,7 +27,9 @@
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
     </div>
-    <nav class="navbar navbar-light d-sm-block d-md-block d-lg-none d-xl-none">
+
+    <!-- the d-lg-none class will hide this element on large screens and above   -->
+    <nav class="navbar navbar-light d-block d-lg-none">
         <div class="container-fluid d-flex justify-content-between">
             <img style="width: 52px; height: 52px" src="images/logo.png" alt="logo">
             <button class="navbar-toggler border border-secondary" type="button" data-bs-toggle="collapse"
@@ -35,8 +40,10 @@
         </div>
     </nav>
 
+    <!-- Main navbar, displayed on desktop or larger and hidden on mobile displays -->
 
-    <nav class="container-fluid d-none d-sm-block d-md-none d-lg-block d-xl-block">
+    <!-- the d-lg-block class will ensure this element is displayed on large and above screens only-->
+    <nav class="container-fluid d-none d-lg-block">
         <div class="row pt-1">
             <div class="col-xl-2 col-lg-3 d-flex align-items-center gap-2">
                 <img style="width: 52px; height: 52px" src="images/logo.png" alt="logo">
@@ -52,6 +59,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- Main header/hero section -->
     <header class="container-fluid">
         <div class="row pt-5 justify-content-center">
             <div class="col-xl-12 d-flex flex-column justify-content-center align-items-center gap-4">
@@ -85,13 +94,19 @@
                 </ul>
             </div>
             <hr class="w-75 mt-5">
-
         </div>
     </header>
+
+    <!-- Beginning of main content  -->
     <main class="container">
         <div class="row gap-5">
+            <!-- left column in main section, always visible regardless of screen size-->
+
             <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 d-flex flex-column align-items-center ">
                 <p class="sec-font my-5">selected work</p>
+                <!-- flex-column ensures the images are stacked in a column on smaller
+                screen sizes while flex-md-row ensures they are displayed side by side on medium and above screens
+                 -->
                 <div class="d-flex gap-4 flex-column flex-md-row">
                     <div class="d-flex flex-column gap-2 col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <img class="w-100 main-img" src="images/apple-ipad.jpg" alt="apple-ipad">
@@ -194,40 +209,42 @@
                     </div>
 
                 </div>
-
-
             </div>
-            <div
-                    class="col flex-column gap-4 fs-3 align-items-center d-none d-lg-flex">
-                <p class="mt-5 sec-font fs-6">the last</p>
-                <div class="d-flex justify-content-center align-items-center gap-3">
-                    <img src="images/mobile-phone.jpg" alt="mobile-phone" class="w-50 last-img">
-                    <p class="mb-0">the admin bar and absolute positioning</p>
-                </div>
 
-                <div class="d-flex justify-content-center align-items-center gap-3">
-                    <img src="images/head.jpg" alt="head" class="w-50 last-img">
-                    <p class="mb-0">nibbler awesome website testing</p>
-                </div>
+            <!-- sidebar, right column in main section, hidden on mobile displays-->
 
-                <div class="d-flex justify-content-center align-items-center gap-3">
-                    <img src="images/ipad.jpg" alt="ipad" class="w-50 last-img">
-                    <p class="mb-0">how to get google to like you</p>
-                </div>
-                <div class="d-flex flex-column gap-1 mt-5">
-                    <p class="sec-font mb-0 fs-5">last tweet</p>
-                    <p class="sec-font fs-4 mb-0 fw-bold" style="text-transform: none">Lorem ipsum dolor sit
-                        amet, consectetur
-                        adipisicing elit. Ad
-                        adipisci
-                        atque
-                        blanditiis,
-                        consectetur delectus eaque eius explicabo fugit impedit laboriosam libero, natus nemo placeat
-                        porro
-                        praesentium, sint voluptas. Minima, totam?</p>
-                </div>
-
+            <!-- the d-lg-flex will ensure this element is displayed on large screen sizes and above while the d-none
+             will ensure it is hidden on smaller screens-->
+            <aside
+            class="col flex-column gap-4 fs-3 align-items-center d-none d-lg-flex">
+            <p class="mt-5 sec-font fs-6">the last</p>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <img src="images/mobile-phone.jpg" alt="mobile-phone" class="w-50 last-img">
+                <p class="mb-0">the admin bar and absolute positioning</p>
             </div>
+
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <img src="images/head.jpg" alt="head" class="w-50 last-img">
+                <p class="mb-0">nibbler awesome website testing</p>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <img src="images/ipad.jpg" alt="ipad" class="w-50 last-img">
+                <p class="mb-0">how to get google to like you</p>
+            </div>
+            <div class="d-flex flex-column gap-1 mt-5">
+                <p class="sec-font mb-0 fs-5">last tweet</p>
+                <p class="sec-font fs-4 mb-0 fw-bold" style="text-transform: none">Lorem ipsum dolor sit
+                    amet, consectetur
+                    adipisicing elit. Ad
+                    adipisci
+                    atque
+                    blanditiis,
+                    consectetur delectus eaque eius explicabo fugit impedit laboriosam libero, natus nemo placeat
+                    porro
+                    praesentium, sint voluptas. Minima, totam?</p>
+            </div>
+            </aside>
         </div>
     </main>
 </div>
