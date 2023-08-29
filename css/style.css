@@ -33,7 +33,6 @@ nav, .sec-font {
 }
 .icon-circle {
      min-width: 20px;
-
  }
 
 .red-circle {
@@ -63,9 +62,6 @@ background-color: var(--crl-blue);
     border-color: var(--crl-gray);
 }
 
-.hamburger {
-    display: none;
-}
 
 
 
