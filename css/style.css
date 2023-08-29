@@ -35,6 +35,19 @@ nav {
 
  }
 
+.red-circle {
+background-color: var(--crl-red);
+}
 
+.orange-circle {
+background-color: var(--crl-orange);
+}
 
+.green-circle {
+background-color: var(--crl-green);
+}
+
+.blue-circle {
+background-color: var(--crl-blue);
+}
 
