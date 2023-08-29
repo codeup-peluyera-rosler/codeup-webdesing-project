@@ -16,7 +16,7 @@ body {
     font-family:var(--pri-font);
 }
 
-nav {
+nav, .sec-font {
     font-family: var(--sec-font);
 }
 .page-wrapper {
@@ -50,4 +50,6 @@ background-color: var(--crl-green);
 .blue-circle {
 background-color: var(--crl-blue);
 }
+
+
 
