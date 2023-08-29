@@ -12,9 +12,40 @@
 </head>
 <body>
 <div class="page-wrapper text-uppercase">
-    <nav class="container-fluid">
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <ul class="d-flex flex-column list-unstyled gap-2 align-items-center justify-content-center mb-0">
+                <li><a class="text-decoration-none" href="#" style="color:gray">Services</a></li>
+                <li><a class="text-decoration-none" href="#" style="color:gray">Work</a></li>
+                <li><a class="text-decoration-none" href="#" style="color:gray">blog</a></li>
+                <li><a class="text-decoration-none" href="#" style="color:gray">contact</a></li>
+            </ul>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-light hamburger">
+        <div class="container-fluid d-flex justify-content-between">
+            <img style="width: 52px; height: 52px" src="images/logo.png" alt="logo">
+            <button class="navbar-toggler border border-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <nav class="container-fluid primary-navbar">
         <div class="row pt-1">
-            <div class="col-lg-2 d-flex align-items-center gap-2">
+            <div class="col-xl-2 col-lg-3 d-flex align-items-center gap-2">
                 <img style="width: 52px; height: 52px" src="images/logo.png" alt="logo">
                 <p class="mb-0 fs-4 text-lowercase fw-bold" >Codeup desing</p>
             </div>
@@ -30,11 +61,11 @@
     </nav>
     <header class="container-fluid">
         <div class="row pt-5 justify-content-center">
-            <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center gap-4">
+            <div class="col-xl-12 d-flex flex-column justify-content-center align-items-center gap-4">
                 <h1>visual design & web development</h1>
                 <h2>from park city, utah</h2>
             </div>
-            <div class="col-lg-12 d-flex justify-content-center align-items-center gap-4 pt-5">
+            <div class="col-xl-12 d-flex justify-content-center align-items-center gap-4 pt-5">
                 <ul class="d-flex circle-list text-white gap-4">
                     <li
                             class="d-flex align-items-center justify-content-center border border-4 border-white rounded-circle mb-0 header-circle red-circle">
@@ -60,7 +91,7 @@
     </header>
     <main class="container">
         <div class="row gap-5">
-            <div class="col-lg-8 d-flex flex-column align-items-center ">
+            <div class="col-xl-8 d-flex flex-column align-items-center ">
                 <p class="sec-font my-5">selected work</p>
                 <div class="d-flex gap-4">
                     <div class="d-flex flex-column gap-2">
