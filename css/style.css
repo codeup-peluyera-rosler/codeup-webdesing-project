@@ -63,5 +63,20 @@ background-color: var(--crl-blue);
     border-color: var(--crl-gray);
 }
 
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: flex;
+    }
+    .primary-navbar {
+        display: none;
+    }
+    
+}
+
 
 
