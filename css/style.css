@@ -5,8 +5,9 @@
     --crl-orange: #eb9d3a;
     --crl-green: #7cb06c;
     --crl-blue: #00aba9;
-    --crl-white: #f0f0f0;
+    --crl-light-gray: #f0f0f0;
     --crl-gray: #e6e6e6;
+
 
     --sec-font: 'Abel', sans-serif;
     --pri-font: 'Anton', sans-serif;
@@ -23,7 +24,7 @@ nav, .sec-font {
     display:flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--crl-gray);
+    background-color: var(--crl-light-gray);
 }
 
 .header-circle {
@@ -49,6 +50,17 @@ background-color: var(--crl-green);
 
 .blue-circle {
 background-color: var(--crl-blue);
+}
+.last-img {
+    max-width: 20%;
+    aspect-ratio: 1/1;
+    border: 4px solid;
+    border-color: var(--crl-gray)
+}
+.main-img {
+    aspect-ratio: 6/4;
+    border: 6px solid;
+    border-color: var(--crl-gray);
 }
 
 
